@@ -1,4 +1,4 @@
-import type { Connector, RawJob } from '../../types.js';
+import type { Connector, RawJob } from '../../type/types.js';
 import { httpText } from '../../core/http.js';
 import { normalizeRaw } from '../../core/normalizer.js';
 

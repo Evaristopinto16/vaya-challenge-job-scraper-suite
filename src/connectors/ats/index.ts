@@ -1,4 +1,4 @@
-import type { Connector } from '../../types.js';
+import type { Connector } from '../../type/types.js';
 import { greenhouse } from './greenhouse.js';
 import { lever } from './lever.js';
 import { workable } from './workable.js';
