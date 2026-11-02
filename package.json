@@ -1,0 +1,23 @@
+{
+  "name": "vaya-challenge-job-scraper-suite",
+  "version": "1.0.0",
+  "description": "Aggregates job listings from **58 applicant tracking systems (ATS)** and **20 job board platforms** into a single searchable, continuously updated index.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Evaristopinto16/vaya-challenge-job-scraper-suite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Evaristopinto16/vaya-challenge-job-scraper-suite/issues"
+  },
+  "homepage": "https://github.com/Evaristopinto16/vaya-challenge-job-scraper-suite#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^26.6.6"
+  }
+}
