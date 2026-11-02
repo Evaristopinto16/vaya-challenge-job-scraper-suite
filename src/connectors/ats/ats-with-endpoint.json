@@ -1,0 +1,27 @@
+{
+  "version": "1.0",
+  "total": 17,
+  "platforms": [
+    { "id": "ashby", "name": "Ashby", "strategy": "api", "endpoint": "https://api.ashbyhq.com/posting-api/job-board/{name}?includeCompensation=true", "notes": "API pública JSON; suporta dados salariais." },
+    { "id": "bamboohr", "name": "BambooHR", "strategy": "api", "endpoint": "https://{company}.bamboohr.com/careers/list", "notes": "Endpoint JSON público por empresa; verificar manualmente." },
+    { "id": "breezy", "name": "Breezy HR", "strategy": "api", "endpoint": "https://{company}.breezy.hr/json", "notes": "Retorna lista JSON de vagas; verificar manualmente." },
+    { "id": "comeet", "name": "Comeet", "strategy": "api", "endpoint": "https://www.comeet.co/careers-api/{company}/positions", "notes": "API JSON por empresa; verificar manualmente." },
+    { "id": "freshteam", "name": "Freshteam", "strategy": "api", "endpoint": "https://{company}.freshteam.com/jobs", "notes": "Página pública; verificar endpoint JSON interno." },
+    { "id": "greenhouse", "name": "Greenhouse", "strategy": "api", "endpoint": "https://boards-api.greenhouse.io/v1/boards/{slug}/jobs", "notes": "API pública estável e clássica; verificar manualmente." },
+    { "id": "icims", "name": "iCIMS", "strategy": "api", "endpoint": "https://api.icims.com/customers/{customerId}/search/portals/jobs", "notes": "API pública documentada; domínio corrigido para api.icims.com." },
+    { "id": "jobvite", "name": "Jobvite", "strategy": "api", "endpoint": "https://jobs.jobvite.com/{company}/search", "notes": "Verificar endpoint JSON interno; há provider em career-ops." },
+    { "id": "join", "name": "JOIN.com", "strategy": "api", "endpoint": "https://join.com/api/v1/companies/{slug}/jobs", "notes": "Verificar endpoint público." },
+    { "id": "lever", "name": "Lever.co", "strategy": "api", "endpoint": "https://api.lever.co/v0/postings/{slug}?mode=json", "notes": "Tentar região US primeiro; EU: api.eu.lever.co." },
+    { "id": "oracle-recruiting", "name": "Oracle Recruiting", "strategy": "api", "endpoint": "https://{tenant}.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions", "notes": "Provider existente em career-ops." },
+    { "id": "personio", "name": "Personio", "strategy": "api", "endpoint": "https://{slug}.jobs.personio.de/xml", "notes": "Retorna XML; suporta ?language=en." },
+    { "id": "pinpoint", "name": "Pinpoint", "strategy": "api", "endpoint": "https://{company}.pinpointhq.com/postings.json", "notes": "Provider em career-ops; documentação oficial confirma." },
+    { "id": "recruitee", "name": "Recruitee", "strategy": "api", "endpoint": "https://{slug}.recruitee.com/api/offers.xml", "notes": "Feed XML público; API oficial api.recruitee.com requer OAuth2." },
+    { "id": "rippling", "name": "Rippling", "strategy": "api", "endpoint": "https://ats.rippling.com/api/v2/board/{slug}/jobs", "notes": "Atualizado para v2 (v1 descontinuado em career-ops)." },
+    { "id": "successfactors", "name": "SAP SuccessFactors", "strategy": "api", "endpoint": "https://{tenant}.successfactors.eu/odata/v2/JobRequisitionLocale", "notes": "Provider em career-ops; OData. Verificar endpoint específico." },
+    { "id": "smartrecruiters", "name": "SmartRecruiters", "strategy": "api", "endpoint": "https://api.smartrecruiters.com/v1/companies/{id}/postings", "notes": "Documentação oficial; alguns endpoints públicos sem auth." },
+    { "id": "taleo", "name": "Taleo", "strategy": "api", "endpoint": "POST https://{host}/careersection/rest/jobboard/searchjobs", "notes": "Requer portal + cookies (JSESSIONID, TaleoSID); rate limit ~10 req/s." },
+    { "id": "teamtailor", "name": "Teamtailor", "strategy": "api", "endpoint": "https://{company}.teamtailor.com/jobs.json", "notes": "Provider em career-ops." },
+    { "id": "workable", "name": "Workable", "strategy": "api", "endpoint": "https://apply.workable.com/api/v1/widget/accounts/{slug}", "notes": "API pública; verificar manualmente." },
+    { "id": "workday", "name": "Workday", "strategy": "api", "endpoint": "https://{tenant}.{dc}.myworkdayjobs.com/wday/cxs/{tenant}/{site}/jobs", "notes": "Endpoint JSON interno; contornar Cloudflare com TLS fingerprint." }
+  ]
+}
