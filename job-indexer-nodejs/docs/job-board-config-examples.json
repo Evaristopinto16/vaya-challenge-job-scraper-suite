@@ -1,0 +1,47 @@
+{
+  "niceboard": {
+    "endpoint": "https://YOUR-BOARD.example/api/jobs",
+    "itemsPath": "jobs",
+    "fields": {
+      "id": "id",
+      "title": "title",
+      "company": "company.name",
+      "description": "description",
+      "location": "location",
+      "url": "url",
+      "applicationUrl": "apply_url",
+      "postedAt": "created_at"
+    }
+  },
+  "jobiqo": {
+    "endpoint": "https://YOUR-BOARD.example/api/jobs",
+    "itemsPath": "results",
+    "fields": {
+      "id": "id",
+      "title": "title",
+      "company": "organization.name",
+      "url": "url"
+    }
+  },
+  "smartjobboard": {
+    "listingUrl": "https://YOUR-BOARD.example/jobs",
+    "selectors": {
+      "item": ".job",
+      "title": ".job-title",
+      "company": ".company",
+      "location": ".location",
+      "url": "a.job-link"
+    }
+  },
+  "jobboardio": {
+    "endpoint": "https://YOUR-BOARD.example/api/listings",
+    "itemsPath": "data",
+    "fields": {
+      "id": "job_id",
+      "title": "position",
+      "company": "company",
+      "location": "location",
+      "url": "url"
+    }
+  }
+}
